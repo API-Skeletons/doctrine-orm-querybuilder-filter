@@ -1,4 +1,4 @@
-# Doctrine QueryBuilder Filter
+# Doctrine ORM QueryBuilder Filter
 
 [![Build Status](https://github.com/API-Skeletons/doctrine-querybuilder-filter/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/API-Skeletons/doctrine-querybuilder-filter/actions/workflows/continuous-integration.yml?query=branch%3Amain)
 [![Code Coverage](https://codecov.io/gh/API-Skeletons/doctrine-querybuilder-filter/branch/main/graphs/badge.svg)](https://codecov.io/gh/API-Skeletons/doctrine-querybuilder-filter/branch/main)

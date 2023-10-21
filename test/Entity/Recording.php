@@ -1,6 +1,6 @@
 <?php
 
-namespace ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity;
+namespace ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity;
 
 /**
  * Recording
@@ -18,7 +18,7 @@ class Recording
     private $id;
 
     /**
-     * @var \ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Performance
+     * @var \ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Performance
      */
     private $performance;
 
@@ -72,11 +72,11 @@ class Recording
     /**
      * Set performance.
      *
-     * @param \ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Performance $performance
+     * @param \ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Performance $performance
      *
      * @return Recording
      */
-    public function setPerformance(\ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Performance $performance)
+    public function setPerformance(\ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Performance $performance)
     {
         $this->performance = $performance;
 
@@ -86,7 +86,7 @@ class Recording
     /**
      * Get performance.
      *
-     * @return \ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Performance
+     * @return \ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Performance
      */
     public function getPerformance()
     {
@@ -96,11 +96,11 @@ class Recording
     /**
      * Add user.
      *
-     * @param \ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\User $user
+     * @param \ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\User $user
      *
      * @return Recording
      */
-    public function addUser(\ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\User $user)
+    public function addUser(\ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\User $user)
     {
         $this->users[] = $user;
 
@@ -110,11 +110,11 @@ class Recording
     /**
      * Remove user.
      *
-     * @param \ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\User $user
+     * @param \ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\User $user
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeUser(\ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\User $user)
+    public function removeUser(\ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\User $user)
     {
         return $this->users->removeElement($user);
     }

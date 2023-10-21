@@ -1,6 +1,6 @@
 <?php
 
-namespace ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity;
+namespace ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity;
 
 /**
  * Artist
@@ -67,11 +67,11 @@ class Artist
     /**
      * Add performance.
      *
-     * @param \ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Performance $performance
+     * @param \ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Performance $performance
      *
      * @return Artist
      */
-    public function addPerformance(\ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Performance $performance)
+    public function addPerformance(\ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Performance $performance)
     {
         $this->performances[] = $performance;
 
@@ -81,11 +81,11 @@ class Artist
     /**
      * Remove performance.
      *
-     * @param \ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Performance $performance
+     * @param \ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Performance $performance
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removePerformance(\ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Performance $performance)
+    public function removePerformance(\ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Performance $performance)
     {
         return $this->performances->removeElement($performance);
     }

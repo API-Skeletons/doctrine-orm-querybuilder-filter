@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ApiSkeletons\Doctrine\QueryBuilder\Filter;
+namespace ApiSkeletons\Doctrine\ORM\QueryBuilder\Filter;
 
 use DateTime;
 use Doctrine\ORM\EntityManager;

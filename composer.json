@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ApiSkeletons\\Doctrine\\QueryBuilder\\Filter\\": "src"
+            "ApiSkeletons\\Doctrine\\ORM\\QueryBuilder\\Filter\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ApiSkeletonsTest\\Doctrine\\QueryBuilder\\Filter\\": "test"
+            "ApiSkeletonsTest\\Doctrine\\ORM\\QueryBuilder\\Filter\\": "test"
         }
     },
     "minimum-stability": "dev",

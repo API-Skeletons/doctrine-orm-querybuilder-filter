@@ -1,6 +1,6 @@
 <?php
 
-namespace ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity;
+namespace ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity;
 
 /**
  * User
@@ -96,11 +96,11 @@ class User
     /**
      * Add recording.
      *
-     * @param \ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Recording $recording
+     * @param \ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Recording $recording
      *
      * @return User
      */
-    public function addRecording(\ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Recording $recording)
+    public function addRecording(\ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Recording $recording)
     {
         $this->recordings[] = $recording;
 
@@ -110,11 +110,11 @@ class User
     /**
      * Remove recording.
      *
-     * @param \ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Recording $recording
+     * @param \ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Recording $recording
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeRecording(\ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Recording $recording)
+    public function removeRecording(\ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Recording $recording)
     {
         return $this->recordings->removeElement($recording);
     }

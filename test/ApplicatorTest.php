@@ -1,8 +1,8 @@
 <?php
 
-namespace ApiSkeletonsTest\Doctrine\QueryBuilder\Filter;
+namespace ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter;
 
-use ApiSkeletons\Doctrine\QueryBuilder\Filter\Applicator;
+use ApiSkeletons\Doctrine\ORM\QueryBuilder\Filter\Applicator;
 use DateTime;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Tools\SchemaTool;

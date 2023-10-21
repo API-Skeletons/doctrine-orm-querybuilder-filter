@@ -1,6 +1,6 @@
 <?php
 
-namespace ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity;
+namespace ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity;
 
 /**
  * Performance
@@ -38,7 +38,7 @@ class Performance
     private $recordings;
 
     /**
-     * @var \ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Artist
+     * @var \ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Artist
      */
     private $artist;
 
@@ -159,11 +159,11 @@ class Performance
     /**
      * Add recording.
      *
-     * @param \ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Recording $recording
+     * @param \ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Recording $recording
      *
      * @return Performance
      */
-    public function addRecording(\ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Recording $recording)
+    public function addRecording(\ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Recording $recording)
     {
         $this->recordings[] = $recording;
 
@@ -173,11 +173,11 @@ class Performance
     /**
      * Remove recording.
      *
-     * @param \ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Recording $recording
+     * @param \ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Recording $recording
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeRecording(\ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Recording $recording)
+    public function removeRecording(\ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Recording $recording)
     {
         return $this->recordings->removeElement($recording);
     }
@@ -195,11 +195,11 @@ class Performance
     /**
      * Set artist.
      *
-     * @param \ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Artist $artist
+     * @param \ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Artist $artist
      *
      * @return Performance
      */
-    public function setArtist(\ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Artist $artist)
+    public function setArtist(\ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Artist $artist)
     {
         $this->artist = $artist;
 
@@ -209,7 +209,7 @@ class Performance
     /**
      * Get artist.
      *
-     * @return \ApiSkeletonsTest\Doctrine\QueryBuilder\Filter\Entity\Artist
+     * @return \ApiSkeletonsTest\Doctrine\ORM\QueryBuilder\Filter\Entity\Artist
      */
     public function getArtist()
     {

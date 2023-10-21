@@ -94,8 +94,10 @@ class Applicator
 
     /**
      * You may remove available operators such as removing `like`
+     *
+     * @param string|string[] $operator
      */
-    public function removeOperator(string|array $operator): self
+    public function removeOperator($operator): self
     {
         if (is_array($operator)) {
             foreach ($operator as $needle) {
@@ -269,8 +271,10 @@ class Applicator
 
     /**
      * Create a join for deep filtering
+     *
+     * @param mixed $value
      */
-    private function applyRelationship(QueryBuilder $queryBuilder, string $query, mixed $value, string $entityClass, string $alias): void
+    private function applyRelationship(QueryBuilder $queryBuilder, string $query, $value, string $entityClass, string $alias): void
     {
         if (! $this->enableRelationships) {
             return;
@@ -357,8 +361,10 @@ class Applicator
 
     /**
      * Given a query value, format it based on metadata field type.
+     *
+     * @return mixed
      */
-    private function formatValue(string $value, string $fieldType, string $operator): mixed
+    private function formatValue(string $value, string $fieldType, string $operator)
     {
         $value = trim($value);
 
@@ -414,8 +420,10 @@ class Applicator
 
     /**
      * Apply a where clause to the QueryBuilder
+     *
+     * @param mixed $value
      */
-    private function applyWhere(QueryBuilder $queryBuilder, string $columnName, mixed $value, string $operator, string $fieldType, string $alias): void
+    private function applyWhere(QueryBuilder $queryBuilder, string $columnName, $value, string $operator, string $fieldType, string $alias): void
     {
         switch ($operator) {
             case Operators::EQ:

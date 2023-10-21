@@ -1,10 +1,10 @@
 # Doctrine ORM QueryBuilder Filter
 
-[![Build Status](https://github.com/API-Skeletons/doctrine-querybuilder-filter/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/API-Skeletons/doctrine-querybuilder-filter/actions/workflows/continuous-integration.yml?query=branch%3Amain)
-[![Code Coverage](https://codecov.io/gh/API-Skeletons/doctrine-querybuilder-filter/branch/main/graphs/badge.svg)](https://codecov.io/gh/API-Skeletons/doctrine-querybuilder-filter/branch/main)
+[![Build Status](https://github.com/API-Skeletons/doctrine-orm-querybuilder-filter/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/API-Skeletons/doctrine-orm-querybuilder-filter/actions/workflows/continuous-integration.yml?query=branch%3Amain)
+[![Code Coverage](https://codecov.io/gh/API-Skeletons/doctrine-orm-querybuilder-filter/branch/main/graphs/badge.svg)](https://codecov.io/gh/API-Skeletons/doctrine-orm-querybuilder-filter/branch/main)
 [![PHP Version](https://img.shields.io/badge/PHP-7.4||8.0%2b-blue)](https://img.shields.io/badge/PHP-7.4||8.0%2b-blue)
-[![Total Downloads](https://poser.pugx.org/api-skeletons/doctrine-querybuilder-filter/downloads)](//packagist.org/packages/api-skeletons/doctrine-querybuilder-filter)
-[![License](https://poser.pugx.org/api-skeletons/doctrine-querybuilder-filter/license)](//packagist.org/packages/api-skeletons/doctrine-querybuilder-filter)
+[![Total Downloads](https://poser.pugx.org/api-skeletons/doctrine-orm-querybuilder-filter/downloads)](//packagist.org/packages/api-skeletons/doctrine-orm-querybuilder-filter)
+[![License](https://poser.pugx.org/api-skeletons/doctrine-orm-querybuilder-filter/license)](//packagist.org/packages/api-skeletons/doctrine-orm-querybuilder-filter)
 
 
 Apply filters to a QueryBuilder based on request parameters.  Supports deep queries using joins.
@@ -15,7 +15,7 @@ This repository is intened to apply query parameters to filter entity data.
 Run the following to install this library using [Composer](https://getcomposer.org/):
 
 ```bash
-composer require api-skeletons/doctrine-querybuilder-filter
+composer require api-skeletons/doctrine-orm-querybuilder-filter
 ```
 
 ## Quick Start

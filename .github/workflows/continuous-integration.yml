@@ -25,6 +25,7 @@ jobs:
           - "8.2"
         dependencies:
           - "highest"
+          - "lowest"
         optional-dependencies:
           - true
           - false
@@ -48,7 +49,6 @@ jobs:
           php-version: "${{ matrix.php-version }}"
           coverage: "pcov"
           ini-values: "zend.assertions=1"
-          extensions: "pdo_mysql"
 
       - name: "Install dependencies with Composer"
         uses: "ramsey/composer-install@v1"
